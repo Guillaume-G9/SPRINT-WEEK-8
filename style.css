@@ -60,6 +60,7 @@ nav li {
 nav li:hover {
     color: black;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*----MAIN----*/
@@ -117,15 +118,19 @@ h3 {
         font-size: 1.2em;
     }
     nav {
-        width: 80%;
-        top: -2em;
-        left: 1em;
+        width: 75%;
+        position: static;
+        margin: -2em auto;
+        /* top: -2em;
+        left: 50%;
+        transform: translateX(-50%); */
     }
     nav ul {
         display: none;
     }
     section {
         width: 100%;
+        align-items: center;
     }
     article {
         width: 100%;
