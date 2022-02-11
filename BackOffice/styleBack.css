@@ -43,7 +43,7 @@ h1 {
     border-radius: 50px;
     font-size: 40px;
     position: absolute;
-    right: 80px;
+    right: 150px;
     bottom: -40px;
     text-align: center;
     cursor: pointer;
@@ -124,59 +124,12 @@ h3 {
     line-height: 60px;
     position: absolute;
     right: 50px;
-    bottom: 30px;
+    top: 80px;
     cursor: pointer;
     text-align: center;
 }
 
-@media all and (max-width : 800px) {
-    .mainPlacement {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    header section {
-        align-items: center;
-    }
-    h1 {
-        font-size: 36px;
-    }
-    h2 {
-        min-height: 0;
-        margin-right: 0;
-        font-size: 1.2em;
-    }
-    nav {
-        width: 75%;
-        position: static;
-        margin: -2em auto;
-    }
-    nav ul {
-        display: none;
-    }
-    section {
-        width: 100%;
-        align-items: center;
-    }
-    article {
-        width: 100%;
-        margin: 2em 0em;
-        display: flex;
-        flex-direction: column;
-    }
-    h3 {
-        margin: 1em 3em;
-    }
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .description {
-        width : 100%;
-        margin: 0.5em 3em;
-    }
-    .example {
-        width: 100%;
-    }
+.glisse {
+    transform: translateY(200px);
+    transition: 1s;
 }
