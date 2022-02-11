@@ -15,7 +15,6 @@
 section {
     width: 75%;
     position: relative;
-
 }
 
 /*----HEADER----*/
@@ -23,6 +22,7 @@ header {
     width: 100%;
     background-color: var(--mainColor);
     min-height: 10em;
+    position: relative;
 }
 header section {
     min-height: 10em;
@@ -33,6 +33,20 @@ h1 {
     font-size: 48px;
     margin: 0.5em 1em;
     color: white;
+}
+#addPage {
+    background-color: var(--mainColor);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50px;
+    font-size: 40px;
+    position: absolute;
+    right: 80px;
+    bottom: -40px;
+    text-align: center;
+    cursor: pointer;
 }
 
 /*----NAV----*/
@@ -99,6 +113,21 @@ h3 {
 .orange {
     color: rgb(201, 116, 16);
 }
+#addArticle {
+    background-color: var(--mainColor);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    line-height: 60px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    cursor: pointer;
+    text-align: center;
+}
 
 @media all and (max-width : 800px) {
     .mainPlacement {
@@ -121,9 +150,6 @@ h3 {
         width: 75%;
         position: static;
         margin: -2em auto;
-        /* top: -2em;
-        left: 50%;
-        transform: translateX(-50%); */
     }
     nav ul {
         display: none;
