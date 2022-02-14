@@ -73,12 +73,13 @@ li {
     min-height: 120px;
     margin: 20px;
 }
-li button {
-    color: white;
+a {
     background-color: var(--mainColor);
     padding: 1em 4em;
     cursor: pointer;
     border: none;
+    text-decoration: none;
+    color: white;
 }
 h3 {
     font-weight: normal;
@@ -89,7 +90,6 @@ h3 {
     width: 160px;
     font-size: medium;
 }
-
 
 /*-----REPONSIVE-----*/
 @media all and (max-width : 680px) {
