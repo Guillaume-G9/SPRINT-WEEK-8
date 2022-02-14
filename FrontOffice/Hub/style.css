@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --mainColor : #141C3A;
+    --backgroundBoxColor : #E5E5E5;
+    --borderBoxColor : #C4C4C4;
+}   
+
+/*----HEADER----*/
+header {
+    width: 100%;
+    background-color: var(--mainColor);
+    min-height: 10em;
+    display: flex;
+    align-items: flex-start;
+}
+header .container {
+    /* width: 50%; */
+    min-height: 10em;
+    display: flex;
+    align-items: flex-end;
+    margin-left : 3em;
+}
+h1 {
+    font-size: 48px;
+    margin: 0.5em 1em;
+    color: white;
+}
+header button {
+    color: white;
+    background-color: var(--mainColor);
+    border: none;
+    margin: 0.8em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/*-----CONTENU-----*/
+.mainPlacement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    width: 50%;
+    margin: 5em auto;
+    padding: 0.8em;
+    background-color: var(--backgroundBoxColor);
+    border: solid var(--borderBoxColor);
+    color: var(--borderBoxColor);
+}
+section:nth-child(2) {
+    width: 70%;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid var(--borderBoxColor);
+    background-color: var(--backgroundBoxColor);
+    width: 200px;
+    min-height: 120px;
+    margin: 20px;
+}
+li button {
+    color: white;
+    background-color: var(--mainColor);
+    padding: 1em 4em;
+    cursor: pointer;
+}
+h3 {
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 160px;
+    font-size: medium;
+}
+
+
+/*-----REPONSIVE-----*/
+@media all and (max-width : 680px) {
+    #mainTitle span {
+        display: none;
+    }
+    header button {
+        display: none;
+    }
+    input {
+        width: 100%;
+        margin: 0px auto 2em;
+    }
+}

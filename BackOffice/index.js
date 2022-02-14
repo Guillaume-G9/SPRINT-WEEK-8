@@ -4,7 +4,7 @@ const addArticleBtn = document.querySelector('#addArticle')
 const article = document.querySelector('article')
 
 addArticleBtn.addEventListener('click', () => {
-    article.insertAdjacentElement('afterend', article.cloneNode(true))
+    article.insertAdjacentElement('beforebegin', article.cloneNode(true))
 })    
 
 const h1 = document.querySelector('h1')
