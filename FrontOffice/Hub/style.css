@@ -39,7 +39,7 @@ header button {
 }
 
 /*-----CONTENU-----*/
-.mainPlacement {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +78,7 @@ li button {
     background-color: var(--mainColor);
     padding: 1em 4em;
     cursor: pointer;
+    border: none;
 }
 h3 {
     font-weight: normal;
@@ -100,6 +101,7 @@ h3 {
     }
     input {
         width: 100%;
-        margin: 0px auto 2em;
+        margin: 0px 0px 2em;
+        box-sizing: border-box;
     }
 }
