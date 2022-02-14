@@ -22,15 +22,14 @@ addPageBtn.addEventListener('click', () => {
     saveContent("h1", "Menu")
 })
 
-
-const chargement = (title) => {
+const loading = (title) => {
     if (!localStorage.getItem(title)) {
    h1.innerHTML = "Arrays"
 } else {
     h1.innerHTML = loadContent('h1')
 }}
 
-window.onload = chargement('h1')
+window.onload = loading('h1')
 
 
 
