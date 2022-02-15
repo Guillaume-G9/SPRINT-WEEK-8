@@ -52,15 +52,10 @@ input {
     border: solid var(--borderBoxColor);
     color: var(--borderBoxColor);
 }
-section:nth-child(2) {
-    width: 70%;
-}
 ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 li {
     display: flex;
@@ -92,6 +87,11 @@ h3 {
 }
 
 /*-----REPONSIVE-----*/
+@media all and (max-width : 980px) {
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media all and (max-width : 680px) {
     #mainTitle span {
         display: none;
@@ -103,5 +103,8 @@ h3 {
         width: 100%;
         margin: 0px 0px 2em;
         box-sizing: border-box;
+    }
+    ul {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

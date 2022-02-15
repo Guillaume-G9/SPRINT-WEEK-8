@@ -12,7 +12,7 @@ fetch('https://strapi-gogokodo.herokuapp.com/api/sources')
 function display (data) {
     // for (video of data) {
     //     article.innerHTML += 
-    //     `<li>
+    //     `<li>    
     //         <h3>${video.attributes.title}</h3>
     //         <a href="${video.attributes.url}" target = "_blank" >Visiter</a>
     //     </li>`
