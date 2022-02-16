@@ -38,3 +38,12 @@ searchBar.addEventListener('keyup', () => {
     })
     display(filter)
 })
+
+// const tab = ["Coucou","Bonjour","Hello","Hola", "Yo","Hi","Salut"]
+
+// function triTableau (tableau) {
+//     const tabFilter = tableau.filter(word => word.length <= 5)
+//     return tabFilter
+// }
+
+// console.log(triTableau(tab))
