@@ -22,7 +22,6 @@ function singIn (email, password) {
         document.location.href = "http://127.0.0.1:5500/FrontOffice/Hub/index.html"
         var user = userCredential.user;
         console.log(user);
-        console.log(currentUser.user);
         // ...
     })
     .catch((error) => {
@@ -34,8 +33,8 @@ connexionBtn.addEventListener('click', () => {
     if(validateEmail(email.value) && validatePassword(password)){
         singIn(email,password)
     } else {
-        errorMsgEmail.textContent = "error";
-        errorMsgPassword.textContent = "error";
+        errorMsgEmail.textContent = "Email ou mot de passe invalide.";
+        errorMsgPassword.textContent = "Email ou mot de passe invalide.";
     }
 })
 
