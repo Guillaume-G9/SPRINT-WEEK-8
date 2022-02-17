@@ -39,23 +39,31 @@ main {
 }
 input {
     width: 100%;
-    min-height: 30px;
-    margin: 20px 0;
-    padding-left: 5px;
+    min-height: 50px;
+    margin: 20px 0 5px;
+    padding-left: 20px;
+    background-color: #C4C4C44D;
+    border: 1px solid;
+}
+::placeholder {
+    color: black;
+    font-weight: bold;
 }
 .error {
     color: red;
-    font-size: small;
+    font-size: 0.6em;
     left: 0;
 }
 button {
-    width: 60%;
-    min-height: 30px;
+    width: 50%;
+    min-height: 50px;
     margin: 20px auto;
     padding-left: 5px;
     color: white;
     background-color: var(--mainColor);
     border: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 main img {
     width: 100%;
