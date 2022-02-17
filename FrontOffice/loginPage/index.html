@@ -14,13 +14,34 @@
     <main>
         <div class="container">
             <input id="email" type="email" placeholder="{@mail}" required>
-            <p class="error">message d'erreur</p>
+            <p id="emailError" class="error"></p>
             <input id="password" type="password" placeholder="<mpd>" required>
-            <p class="error">message d'erreur</p>
+            <p id="passwordError" class="error"></p>
             <button id="connexion">Gogokodo.co()</button>
         </div>
         <img src="images/mobile.jpg" alt="mobile">
     </main>
+    
+        <!-- Firebase -->
+        
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+        <script type="module">
+
+            // Initialize Firebase
+
+        firebase.initializeApp( {
+            apiKey: "AIzaSyAkUSI4f2j3qNfjQnzAjbAb_hmvku-UPKc",
+            authDomain: "gogokodo-login.firebaseapp.com",
+            projectId: "gogokodo-login",
+            storageBucket: "gogokodo-login.appspot.com",
+            messagingSenderId: "199742607551",
+            appId: "1:199742607551:web:a78c5ef4fd132e8b4e760a",
+            measurementId: "G-NCTTEQ740F"
+            });
+        </script>
 </body>
 <script src="index.js"></script>
 </html>

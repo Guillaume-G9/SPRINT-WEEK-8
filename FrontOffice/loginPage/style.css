@@ -54,6 +54,9 @@ input {
     font-size: 0.6em;
     left: 0;
 }
+.show {
+    display: block;
+}
 button {
     width: 50%;
     min-height: 50px;
@@ -90,5 +93,8 @@ main img {
         margin-bottom: 0;
         min-height: 5em;
         width: 100%;
+    }
+    #password {
+        width: 50%;
     }
 }
