@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -84,6 +86,46 @@ h3 {
     overflow: hidden;
     width: 160px;
     font-size: medium;
+}
+
+.terminal {
+    font-size: 2em;
+    font-family: 'VT323', monospace;
+    background-color: black;
+    color: grey;
+    height: 80vh;
+    margin: 0 8% 2% 8%;
+}
+
+.terminal * {
+    font-family: 'VT323', monospace;
+    color: grey;
+}
+
+.terminal label {
+    margin-left: 7%;
+}
+
+.terminal input {
+    font-size: 1.05em;
+    margin-left: -1%;
+    margin-top: 2%;
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+
+.terminal ul {
+    margin-top: -5%;
+
+    width: 100%;
+}
+
+.terminal li {
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    margin-bottom: -6%;
 }
 
 /*-----REPONSIVE-----*/
